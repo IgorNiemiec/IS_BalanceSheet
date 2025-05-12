@@ -21,7 +21,7 @@ namespace EnergyBalancesApi.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("EnergyBalancesApi.Models.Country", b =>
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyData", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,17 +29,51 @@ namespace EnergyBalancesApi.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<double>("Amount")
+                        .HasColumnType("double");
+
+                    b.Property<string>("Code")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.ToTable("EnergyData");
+                });
+
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
 
                     b.ToTable("Countries");
                 });
 
-            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyBalanceRecord", b =>
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyFlowType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,14 +81,69 @@ namespace EnergyBalancesApi.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.ToTable("FlowTypes");
+                });
+
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyValue", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("double");
+
                     b.Property<int>("CountryId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("FossilFuelKtoe")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<int>("FlowTypeId")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("RenewableKtoe")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");
@@ -63,7 +152,11 @@ namespace EnergyBalancesApi.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("EnergyBalanceRecord");
+                    b.HasIndex("FlowTypeId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("EnergyValues");
                 });
 
             modelBuilder.Entity("EnergyBalancesApi.Models.SourceMetadata", b =>
@@ -111,20 +204,46 @@ namespace EnergyBalancesApi.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyBalanceRecord", b =>
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyValue", b =>
                 {
-                    b.HasOne("EnergyBalancesApi.Models.Country", "Country")
-                        .WithMany("EnergyBalanceRecords")
+                    b.HasOne("EnergyBalancesApi.Models.EnergyModels.Country", "Country")
+                        .WithMany("EnergyValues")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EnergyBalancesApi.Models.EnergyModels.EnergyFlowType", "FlowType")
+                        .WithMany("EnergyValues")
+                        .HasForeignKey("FlowTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EnergyBalancesApi.Models.EnergyModels.EnergyProduct", "Product")
+                        .WithMany("EnergyValues")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Country");
+
+                    b.Navigation("FlowType");
+
+                    b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("EnergyBalancesApi.Models.Country", b =>
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.Country", b =>
                 {
-                    b.Navigation("EnergyBalanceRecords");
+                    b.Navigation("EnergyValues");
+                });
+
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyFlowType", b =>
+                {
+                    b.Navigation("EnergyValues");
+                });
+
+            modelBuilder.Entity("EnergyBalancesApi.Models.EnergyModels.EnergyProduct", b =>
+                {
+                    b.Navigation("EnergyValues");
                 });
 #pragma warning restore 612, 618
         }

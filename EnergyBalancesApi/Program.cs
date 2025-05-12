@@ -1,12 +1,61 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using EnergyBalancesApi.Data;       // DbContext
-using EnergyBalancesApi.Models;     // modele, je�li potrzebujesz
+using EnergyBalancesApi.Models;     // modele, jeśli potrzebujesz
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using System.Net.Http.Headers;
+
+using Polly;
+using Polly.Extensions.Http;
+using Refit;
+using EnergyBalancesApi.Infrastructure.Clients;
+using EnergyBalancesApi.Services;
+using Newtonsoft.Json.Linq;
+using EnergyBalancesApi.Models.Dto;
+
+
+
+static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
+{
+    return HttpPolicyExtensions
+        .HandleTransientHttpError()
+        .WaitAndRetryAsync(3, retryAttempt =>
+            TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+}
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Dodaj politykę do każdego klienta
+builder.Services.AddHttpClient("Eurostat")
+    .AddPolicyHandler(GetRetryPolicy());
+builder.Services.AddHttpClient("OWID")
+    .AddPolicyHandler(GetRetryPolicy());
+builder.Services.AddHttpClient("IEA")
+    .AddPolicyHandler(GetRetryPolicy());
+
+// SLOWNIK KRAJOW
+
+
+// Przykład: prosty słownik w Program.cs
+var countryLookup = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
+{
+    ["PL"] = 1,
+    ["DE"] = 2,
+    ["FR"] = 3,
+};
+
+
+builder.Services.AddSingleton<IDictionary<string, int>>(countryLookup);
+
+
+
+
+
 
 // rejestracja DbContext
 builder.Services.AddDbContext<EnergyDbContext>(options =>
@@ -50,11 +99,37 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
+// Rejestracja HttpClientFactory
+builder.Services.AddHttpClient();           // domyślny klient :contentReference[oaicite:3]{index=3}
+
+// Eurostat – JSON‑stat format
+builder.Services.AddHttpClient("Eurostat", c =>
+{
+    c.BaseAddress = new Uri("https://api.europa.eu/eurostat/data/");
+    c.DefaultRequestHeaders.Accept.Add(
+        new MediaTypeWithQualityHeaderValue("application/json"));
+});
+
+
+
+
+
+
 builder.Services.AddAuthorization();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddControllers();
+
+
+
+
+
+builder.Services.AddHttpClient<IEurostatDataService, EurostatDataService>();
+builder.Services.AddScoped<IDataTransformer, DataTransformer>();
+
+
+builder.Services.AddScoped<EnergyDataService>();
 
 var application = builder.Build();
 
@@ -62,11 +137,11 @@ var application = builder.Build();
 application.UseHttpsRedirection();
 
 
-application.UseSwagger();               // Renderuje JSON spec
-application.UseSwaggerUI(c =>           // Interfejs UI
+application.UseSwagger();              
+application.UseSwaggerUI(c =>          
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "EnergyBalancesApi v1");
-    c.RoutePrefix = "swagger";  // np. �cie�ka /swagger
+    c.RoutePrefix = "swagger";  // np. ścieżka /swagger
 });
 
 
