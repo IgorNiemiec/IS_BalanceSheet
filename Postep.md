@@ -28,3 +28,21 @@ InfoWorld
 Swagger / OpenAPI: Uzupełniliśmy Program.cs o AddSwaggerGen() i middleware UseSwagger()/UseSwaggerUI(), dzięki czemu mamy automatyczną dokumentację API i wygodny interfejs testowy 
 Code Maze
 .
+
+KROK 7 - Implementacja interfejsów API
+
+🧩 Czego oczekujemy od API?
+
+filtrowania: po kraju, roku, bilansie, produkcie, jednostce
+
+agregacji: sumy wg kraju, produktu, roku
+
+dostępu do danych źródłowych (rekordy surowe)
+
+pobierania list (kraje, lata, typy bilansu, produkty) — np. do dropdownów
+
+skalowalności: API gotowe na rozbudowę
+
+przejrzystości (RESTful)
+
+https://chatgpt.com/share/682256ab-22d0-8000-9379-1de1b024c495

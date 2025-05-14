@@ -14,6 +14,7 @@ using EnergyBalancesApi.Infrastructure.Clients;
 using EnergyBalancesApi.Services;
 using Newtonsoft.Json.Linq;
 using EnergyBalancesApi.Models.Dto;
+using EnergyBalancesApi.Services.FrontService;
 
 
 
@@ -123,10 +124,14 @@ builder.Services.AddControllers();
 
 
 
-
-
 builder.Services.AddHttpClient<IEurostatDataService, EurostatDataService>();
 builder.Services.AddScoped<IDataTransformer, DataTransformer>();
+
+
+builder.Services.AddScoped<EnergyQueryService>();
+builder.Services.AddScoped<EnergyReportService>();
+builder.Services.AddScoped<EnergyProductReportService>();
+
 
 
 builder.Services.AddScoped<EnergyDataService>();

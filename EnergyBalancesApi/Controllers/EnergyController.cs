@@ -1,6 +1,9 @@
 ﻿using EnergyBalancesApi.Models.Dto;
+using EnergyBalancesApi.Models.EnergyModels;
 using EnergyBalancesApi.Services;
+using EnergyBalancesApi.Services.FrontService;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
 [ApiController]
@@ -114,7 +117,104 @@ public class EnergyController : ControllerBase
 
 
 
+    // FRONTEND
+
+
+    [HttpGet("report")]
+    public async Task<IActionResult> GetReport(
+        [FromQuery] string? country,
+        [FromQuery] int? year,
+        [FromQuery] string? flow,
+        [FromServices] EnergyReportService reportService)
+        {
+            var result = await reportService.GetReportAsync(country, year, flow);
+            if (result.Count == 0)
+                return NotFound("Brak danych do raportu.");
+
+             return Ok(result);
+        }
+
+
+    [HttpGet("values")]
+    public async Task<IActionResult> GetEnergyValues(
+        [FromQuery] string? country,
+        [FromQuery] int? year,
+        [FromQuery] string? flow,
+        [FromQuery] string? unit,
+        [FromQuery] string? product,
+        [FromServices] EnergyQueryService queryService)
+    {
+        var data = await queryService.GetEnergyValuesAsync(country, year, flow, unit, product);
+
+
+        if (data.Count == 0)
+            return NotFound("Brak pasujących danych.");
+        return Ok(data);
+    }
+
+    // GET /api/energy/values
+    //
+    // GET /api/energy/values? country = PL
+    //
+    // GET /api/energy/values? country = PL & year = 2010 & flow = PPRD
+    //
+    // GET /api/energy/values? country = DE & year = 2010 & flow = GIC_TOT & product = G3000 & unit = KTOE
+
+
+    [HttpGet("report/by-product")]
+    public async Task<IActionResult> GetProductReport(
+    [FromQuery] string? country,
+    [FromQuery] int? year,
+    [FromQuery] string? flow,
+    [FromQuery] string? unit,
+    [FromServices] EnergyProductReportService reportService)
+    {
+        var report = await reportService.GetTotalByProductAsync(country, year, flow, unit);
+        if (report == null || !report.Any())
+            return NotFound("Brak danych dla podanych parametrów.");
+
+        return Ok(report);
+
+    }
+
+    //GET /api/energy/report/by-product
+    //
+    //GET /api/energy/report/by-product? country = PL
+    //
+    //GET /api/energy/report/by-product? country = PL & year = 2010
+    //
+    //GET /api/energy/report/by-product? country = PL & year = 2010 & flow = PPRD
+    //
+    //GET /api/energy/report/by-product? country = DE & year = 2010 & flow = GIC_TOT & unit = KTOE
+
+
+    [HttpGet("report/by-country")]
+    public async Task<IActionResult> GetCountryReport(
+    [FromQuery] string? product,
+    [FromQuery] int? year,
+    [FromQuery] string? flow,
+    [FromQuery] string? unit,
+    [FromServices] EnergyReportService reportService)
+     {
+        var report = await reportService.GetTotalByCountryAsync(product, year, flow, unit);
+        if (report == null || !report.Any())
+            return NotFound("Brak danych dla podanych parametrów.");
+        return Ok(report);
+     }
+
+
+   // GET /api/energy/report/by-country
+   //
+   // GET /api/energy/report/by-country? product = G3000
+   //
+   // GET /api/energy/report/by-country? product = G3000 & year = 2010
+   //
+   // GET /api/energy/report/by-country? product = RA000 & year = 2010 & flow = PPRD
 
 
 
-}
+
+
+
+
+    }
