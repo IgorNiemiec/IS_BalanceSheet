@@ -150,7 +150,7 @@ Witaj Jarvis. Jesteś ekspertem i prawdziwym mistrzem w dziedzinie integracji sy
 
 Temat projektu brzmi: 
 
-Bilanse energii pozyskiwanej z paliw kopalnych i energii odnawialnej dla Polsk,i w zdanych okresach czasu, w porównaniu z innymi krajami świata.
+w
 
 Teraz przedstawiam ci wszystkie wymagania funkcjonalne oraz niefunkcjonalne.
 

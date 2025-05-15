@@ -39,6 +39,19 @@ builder.Services.AddHttpClient("OWID")
 builder.Services.AddHttpClient("IEA")
     .AddPolicyHandler(GetRetryPolicy());
 
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
+
+
 // SLOWNIK KRAJOW
 
 
@@ -138,7 +151,7 @@ builder.Services.AddScoped<EnergyDataService>();
 
 var application = builder.Build();
 
-
+application.UseCors("AllowFrontend");
 application.UseHttpsRedirection();
 
 

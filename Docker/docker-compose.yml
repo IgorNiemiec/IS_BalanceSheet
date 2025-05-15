@@ -17,7 +17,7 @@ services:
       MYSQL_DATABASE: EnergyDb
     volumes:
       - db_data:/var/lib/mysql
-      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+     -- ./docker/mysql/my.cnf:/etc/mysql/my.cnf
 
 volumes:
   db_data:
