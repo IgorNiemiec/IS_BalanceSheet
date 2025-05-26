@@ -1,14 +1,14 @@
 import { LoginForm } from "../components/login/LoginForm"
 
+import "../styles/LoginPage.css"
+
 export default function LoginPage() {
 return (
-<div className="min-h-screen flex items-center justify-center bg-gray-100">
-<div className="w-full max-w-md bg-white p-6 rounded-xl shadow-lg">
-<h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-Logowanie do systemu
-</h2>
-<LoginForm />
-</div>
-</div>
+<div className="login-container">
+      <div className="login-card">
+        <h2 className="login-title">Logowanie do systemu</h2>
+        <LoginForm />
+      </div>
+    </div>
 )
 }

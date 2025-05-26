@@ -25,7 +25,7 @@ namespace EnergyBalancesApi.Models
         [JsonPropertyName("value")]
         public Dictionary<string, double> Value { get; set; }
 
-        // 🆕 Nowe pole: Dimension
+        
         [JsonPropertyName("dimension")]
         public Dictionary<string, DimensionInfo> Dimension { get; set; }
     }

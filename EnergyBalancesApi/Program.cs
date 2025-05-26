@@ -31,13 +31,9 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Dodaj politykę do każdego klienta
 builder.Services.AddHttpClient("Eurostat")
     .AddPolicyHandler(GetRetryPolicy());
-builder.Services.AddHttpClient("OWID")
-    .AddPolicyHandler(GetRetryPolicy());
-builder.Services.AddHttpClient("IEA")
-    .AddPolicyHandler(GetRetryPolicy());
+
 
 
 
@@ -114,9 +110,9 @@ builder.Services.AddSwaggerGen(c =>
 
 
 // Rejestracja HttpClientFactory
-builder.Services.AddHttpClient();           // domyślny klient :contentReference[oaicite:3]{index=3}
+builder.Services.AddHttpClient();           
 
-// Eurostat – JSON‑stat format
+
 builder.Services.AddHttpClient("Eurostat", c =>
 {
     c.BaseAddress = new Uri("https://api.europa.eu/eurostat/data/");
@@ -159,7 +155,7 @@ application.UseSwagger();
 application.UseSwaggerUI(c =>          
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "EnergyBalancesApi v1");
-    c.RoutePrefix = "swagger";  // np. ścieżka /swagger
+    c.RoutePrefix = "swagger";  
 });
 
 
@@ -175,21 +171,6 @@ var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
-
-application.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
 
 application.MapControllers();
 application.Run();

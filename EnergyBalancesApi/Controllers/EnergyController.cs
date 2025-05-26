@@ -19,8 +19,6 @@ public class EnergyController : ControllerBase
         _transformer = transformer;
     }
 
-  
-
     private async Task<IActionResult> GetDataForCountries(string nrg_bal, string year)
     {
         var countries = new[] { "PL", "DE", "FR", "IT" };
@@ -47,30 +45,34 @@ public class EnergyController : ControllerBase
     public async Task<IActionResult> GetPrimaryProduction([FromServices] EnergyDataService dataService)
     {
         var countries = new[] { "PL", "DE", "FR", "IT" };
-        const string nrg_bal = "PPRD";  // Bilanse produkcji pierwotnej
+        const string nrg_bal = "PPRD";  
         const string unit = "KTOE";
-        const string time = "2010";
+        var time = new[] { 2010, 2015,2020 };
 
         var results = new List<EnergyValueDto>();
 
-        foreach (var geo in countries)
-        {
-            var url = $"https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_c?geo={geo}&nrg_bal={nrg_bal}&unit={unit}&time={time}";
-            var rawData = await _dataService.GetEurostatDataAsync(url);
 
-            if (rawData == null || rawData.Value == null || !rawData.Value.Any())
+        foreach (var year in time)
+        {
+            foreach (var geo in countries)
             {
-                Console.WriteLine($"Brak danych dla {geo} ({nrg_bal}) w {time}");
-                continue;
+                var url = $"https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_c?geo={geo}&nrg_bal={nrg_bal}&unit={unit}&time={year}";
+                var rawData = await _dataService.GetEurostatDataAsync(url);
+
+                if (rawData == null || rawData.Value == null || !rawData.Value.Any())
+                {
+                    Console.WriteLine($"Brak danych dla {geo} ({nrg_bal}) w {time}");
+                    continue;
+                }
+
+                var transformer = new DataTransformer();
+                var transformed = transformer.Transform(rawData.Value, geo);
+                results.AddRange(transformed);
+
             }
 
-            // Tworzymy transformer bez słownika w konstruktorze
-            var transformer = new DataTransformer();
-            var transformed = transformer.Transform(rawData.Value, geo);
-            results.AddRange(transformed);
+            await dataService.SaveDataAsync(results, "PPRD", "KTOE", year);
         }
-
-        await dataService.SaveDataAsync(results, "PPRD", "KTOE", 2010);
 
         return Ok(results);
     }
@@ -120,6 +122,65 @@ public class EnergyController : ControllerBase
     // FRONTEND
 
 
+    // Paliwa Kopalne
+
+   
+
+    [HttpGet("report/by-product-filtered")]
+    public async Task<IActionResult> GetFilteredProductReport(
+    [FromQuery] string? country,
+    [FromQuery] int? year,
+    [FromServices] EnergyQueryService queryService)
+    {
+        var allowedProductIds = new[] { 1, 3, 4, 5, 6, 18 };
+
+        var data = await queryService.GetEnergyValuesByProductIdsAsync(country,year,allowedProductIds);
+
+        var simplified = data.Select(x => new {
+            Code = x.ProductCode,
+            Description = x.ProductDescription,
+            Amount = x.Amount
+        }).ToList();
+
+        if (!simplified.Any())
+            return NotFound("Brak danych dla podanych parametrów.");
+
+        return Ok(simplified);
+    }
+
+    // GET /api/energy/report/by-product-filtered?country=PL&year=2010
+
+
+
+    // Energia Odnawialna
+
+    [HttpGet("report/by-renewableproduct-filtered")]
+    public async Task<IActionResult> GetFilteredRenewableProductReport(
+    [FromQuery] string? country,
+    [FromQuery] int? year,
+    [FromServices] EnergyQueryService queryService
+      )
+    {
+        var allowedProductIds = new[] { 26, 28, 29 , 30};
+
+        var data = await queryService.GetRenewableEnergyValuesByProductIdsAsync(country, year, allowedProductIds);
+
+        var simplified = data.Select(x => new {
+            Code = x.ProductCode,
+            Description = x.ProductDescription,
+            Amount = x.Amount
+        }).ToList();
+
+        if (!simplified.Any())
+            return NotFound("Brak danych dla podanych parametrów.");
+
+        return Ok(simplified);
+
+    }
+
+
+
+
     [HttpGet("report")]
     public async Task<IActionResult> GetReport(
         [FromQuery] string? country,
@@ -133,6 +194,7 @@ public class EnergyController : ControllerBase
 
              return Ok(result);
         }
+
 
 
     [HttpGet("values")]
@@ -212,8 +274,7 @@ public class EnergyController : ControllerBase
    // GET /api/energy/report/by-country? product = RA000 & year = 2010 & flow = PPRD
 
 
-
-
+   
 
 
 

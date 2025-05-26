@@ -1,0 +1,77 @@
+.energy-by-product-card {
+background-color: #f9f9f9;
+padding: 2rem;
+border-radius: 8px;
+border: 1px solid #ddd;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+max-width: 1000px;
+margin: 2rem auto;
+}
+
+.energy-by-product-header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 1.5rem;
+}
+
+.energy-by-product-header h2 {
+font-size: 1.25rem;
+color: #333;
+margin: 0;
+}
+
+.select-trigger {
+width: 150px;
+}
+
+.energy-by-product-loader {
+text-align: center;
+padding: 2rem;
+font-size: 1.1rem;
+}
+
+.table-wrapper {
+overflow-x: auto;
+}
+
+.energy-by-product-table {
+width: 100%;
+border-collapse: collapse;
+background-color: #969696;
+}
+
+.energy-by-product-table th,
+.energy-by-product-table td {
+padding: 0.75rem 1rem;
+border: 1px solid #000000;
+text-align: left;
+font-size: 0.95rem;
+}
+
+.energy-by-product-table th {
+background-color: #009041;
+color: #333;
+}
+
+.energy-by-product-table tr:hover {
+background-color: #3e3636;
+}
+
+.code-cell {
+font-weight: bold;
+color: #444;
+}
+
+.number-cell {
+text-align: right;
+font-variant-numeric: tabular-nums;
+}
+
+.select-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}

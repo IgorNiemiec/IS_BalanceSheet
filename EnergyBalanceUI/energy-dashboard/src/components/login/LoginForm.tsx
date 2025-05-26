@@ -1,11 +1,9 @@
 import { useForm } from "react-hook-form";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
-import { Loader } from "../ui/loader";
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+
+import "../../styles/LoginForm.css"
 
 type FormData = {
   username: string;
@@ -46,20 +44,19 @@ export function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-      <div className="space-y-2">
-        <Label htmlFor="username">Nazwa użytkownika</Label>
-        <Input id="username" {...register("username")} required />
+     <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+      <div className="form-group">
+        <label htmlFor="username">Nazwa użytkownika</label>
+        <input id="username" {...register("username")} required />
       </div>
-      <div className="space-y-2">
-        <Label htmlFor="password">Hasło</Label>
-        <Input id="password" type="password" {...register("password")} required />
+      <div className="form-group">
+        <label htmlFor="password">Hasło</label>
+        <input id="password" type="password" {...register("password")} required />
       </div>
-      {error && <p className="text-red-500 text-sm">{error}</p>}
-      <Button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? <Loader className="mr-2" /> : null}
-        Zaloguj się
-      </Button>
+      {error && <p className="form-error">{error}</p>}
+      <button type="submit" className="form-button" disabled={isSubmitting}>
+        {isSubmitting ? <span className="loader"></span> : "Zaloguj się"}
+      </button>
     </form>
   );
 }

@@ -3,6 +3,7 @@ import { AuthProvider } from "./context/AuthContext";
 import LoginPage from "./pages/LoginPage";
 import { Card, CardContent } from "./components/ui/card";
 import { Input} from "./components/ui/input"
+import RegisterPage from "./pages/RegisterPage";
 
 function App() {
 return (
@@ -26,9 +27,14 @@ Energy Dashboard ⚡
 }
 />
 <Route path="/login" element={<LoginPage />} />
+<Route path="/register" element={<RegisterPage/>} />
 </Routes>
 </Router>
 </AuthProvider>
+
+
+
+
 );
 }
 

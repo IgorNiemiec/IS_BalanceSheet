@@ -4,8 +4,8 @@
     {
 
         public int Id { get; set; }
-        public string Code { get; set; } // np. "PPRD"
-        public string Description { get; set; } // np. "Primary production"
+        public string Code { get; set; } 
+        public string Description { get; set; } 
 
         public ICollection<EnergyValue> EnergyValues { get; set; }
 

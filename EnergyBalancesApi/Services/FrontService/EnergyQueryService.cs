@@ -1,4 +1,5 @@
 ﻿using EnergyBalancesApi.Data;
+using EnergyBalancesApi.Models.Dto;
 using EnergyBalancesApi.Models.FrontModels;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,65 @@ namespace EnergyBalancesApi.Services.FrontService
         {
             _context = context;
         }
+
+
+        public async Task<List<FossilFuelsReportDto>> GetEnergyValuesByProductIdsAsync(string? country, int? year, int[] allowedProductIds)
+        {
+            var query = _context.EnergyValues
+            .Include(ev => ev.Product)
+            .Include(ev => ev.Country)
+             .Where(ev => allowedProductIds.Contains(ev.ProductId));
+
+                 if (!string.IsNullOrEmpty(country))
+                query = query.Where(ev => ev.Country.Code == country);
+
+
+                 if (year.HasValue)
+                query = query.Where(ev => ev.Year == year.Value);
+
+                 var grouped = await query
+                .GroupBy(ev => new { ev.Product.Code, ev.Product.Description })
+                .Select(g => new FossilFuelsReportDto
+                {
+                    ProductCode = g.Key.Code,
+                    ProductDescription = g.Key.Description,
+                    Amount = g.Sum(ev => ev.Amount)
+                })
+                .ToListAsync();
+
+            return grouped;
+        }
+
+
+
+        public async Task<List<RenewableProductReportDto>> GetRenewableEnergyValuesByProductIdsAsync(string? country, int? year, int[] allowedProductIds)
+        {
+            var query = _context.EnergyValues
+            .Include(ev => ev.Product)
+            .Include(ev => ev.Country)
+             .Where(ev => allowedProductIds.Contains(ev.ProductId));
+
+            if (!string.IsNullOrEmpty(country))
+                query = query.Where(ev => ev.Country.Code == country);
+
+
+            if (year.HasValue)
+                query = query.Where(ev => ev.Year == year.Value);
+
+            var grouped = await query
+           .GroupBy(ev => new { ev.Product.Code, ev.Product.Description })
+           .Select(g => new RenewableProductReportDto
+           {
+               ProductCode = g.Key.Code,
+               ProductDescription = g.Key.Description,
+               Amount = g.Sum(ev => ev.Amount)
+           })
+           .ToListAsync();
+
+            return grouped;
+        }
+
+
 
         public async Task<List<EnergyValuesDto>> GetEnergyValuesAsync(string? country, int? year, string? flow, string? unit, string? product)
         {

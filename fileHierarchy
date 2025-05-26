@@ -6,6 +6,7 @@
    - Controllers
       - AuthController.cs
       - EnergyController.cs
+      - EnergyFetchController.cs
    - Data
       - DesignTimeDbContextFactory.cs
       - EnergyDbContext.cs

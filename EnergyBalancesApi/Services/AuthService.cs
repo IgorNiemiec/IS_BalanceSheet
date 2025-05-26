@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Text;
 using EnergyBalancesApi.Models.Dto;
+using Polly;
 
 public class AuthService : IAuthService
 {
@@ -28,7 +29,29 @@ public class AuthService : IAuthService
             PasswordSalt = hmac.Key
         };
         _db.Users.Add(user);
-        await _db.SaveChangesAsync();
+
+        using var transaction = await _db.Database.BeginTransactionAsync();
+       
+
+        try
+        {
+            await transaction.CommitAsync();
+
+            await _db.SaveChangesAsync();
+
+        }
+        catch (Exception ex)
+        {
+            await transaction.RollbackAsync();
+
+            throw;
+
+        }
+
+
+      
+
+
         return user;
     }
 
@@ -40,7 +63,6 @@ public class AuthService : IAuthService
         var computed = hmac.ComputeHash(Encoding.UTF8.GetBytes(dto.Password));
         if (!computed.SequenceEqual(user.PasswordHash)) return null;
 
-        // Generowanie tokenu
         var jwtSettings = _cfg.GetSection("JwtSettings");
         var claims = new[]
         {

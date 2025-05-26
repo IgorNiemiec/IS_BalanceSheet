@@ -26,6 +26,7 @@ namespace EnergyBalancesApi.Services
             }).ToList();
 
             _context.EnergyData.AddRange(entities);
+
             await _context.SaveChangesAsync();
             Console.WriteLine("Dane zapisane do bazy danych.");
         }
@@ -72,7 +73,23 @@ namespace EnergyBalancesApi.Services
                 _context.EnergyValues.Add(energyValue);
             }
 
-            await _context.SaveChangesAsync();
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                await transaction.CommitAsync();
+
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+
+                throw;
+
+            }
+
         }
 
 
