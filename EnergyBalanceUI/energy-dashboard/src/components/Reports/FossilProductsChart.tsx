@@ -7,7 +7,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  LabelList,
 } from "recharts";
 
 import {
@@ -30,11 +29,16 @@ type CountryProductData = {
 const countries = [
   { code: "PL", color: "#dc3912", name: "Polska" },
   { code: "DE", color: "#3366cc", name: "Niemcy" },
-  { code: "FR", color: "#ff9900", name: "Francja" },
+  { code: "FR", color: "#5dfcf7", name: "Francja" },
   { code: "IT", color: "#109618", name: "Włochy" },
+  { code: "UK", color: "#ff9999", name: "Wielka Brytania"},
+  { code: "SE", color: "#f4ff26", name: "Szwecja"},
+  {code: "ES", color: "#ff920d", name: "Hiszpania"},
+  { code: "HR", color: "#7b00ff", name: "Chorwacja"}
 ];
 
-const years = [2010, 2015, 2020];
+
+const years = [2010, 2011, 2012,2013,2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
 
 export default function FossilProductsChart() {
   const [data, setData] = useState<CountryProductData[]>([]);
@@ -96,7 +100,7 @@ export default function FossilProductsChart() {
   return (
     <div className="energy-comparison-card">
       <div className="chart-controls">
-        <h2>Porównanie krajów wg produktu ({selectedYear})</h2>
+        <h2>Porównanie krajów - zasoby kopalniane ({selectedYear})</h2>
         <Select
           value={selectedYear.toString()}
           onValueChange={(val) => setSelectedYear(parseInt(val))}
@@ -123,17 +127,10 @@ export default function FossilProductsChart() {
             <YAxis tick={{ fontSize: 12 }} />
             <Tooltip formatter={(val: any, name: string) => [`${val.toFixed(2)}`, name]} />
             <Legend />
-            {countries.map((c) => (
-              <Bar key={c.code} dataKey={c.code} fill={c.color} name={c.name}>
-                <LabelList
-                  dataKey={`${c.code}_percent`}
-                  position="top"
-                  formatter={(value: number) =>
-                    value > 0 ? `${value.toFixed(1)}%` : ""
-                  }
-                />
-              </Bar>
-            ))}
+           {countries.map((c) => (
+  <Bar key={c.code} dataKey={c.code} fill={c.color} name={c.name} />
+     ))}
+
           </BarChart>
         </ResponsiveContainer>
       )}

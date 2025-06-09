@@ -3,120 +3,148 @@
   "WorkspaceRootPath": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyflowtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyflowtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\renewableproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\renewableproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\controllers\\energycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\controllers\\energycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\eurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\eurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\energydataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\energydataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyproductreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyproductreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\datatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\datatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\idatatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\idatatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\energyvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\energyvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\controllers\\energyfetchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\controllers\\energyfetchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\eurostatapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\eurostatapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\ieurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\ieurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\data\\iddescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\data\\iddescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\jsonexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\jsonexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\data\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\data\\energydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyproductreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyproductreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\energydataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\energydataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\datatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\datatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\frontservice\\energyreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\frontservice\\energyreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\ieurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\ieurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\idatatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\idatatransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\eurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\eurostatdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyvaluesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyvaluesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\energyvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\energyvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\eurostatapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\eurostatapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyflowtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyflowtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energydataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energydataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\data\\iddescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\data\\iddescriptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energycountryreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energycountryreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\components.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnergyBalanceUI\\energy-dashboard\\components.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnergyBalanceUI\\energy-dashboard\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnergyBalanceUI\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\renewableproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\renewableproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\fossilfuelsreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,42 +155,6 @@
       "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\energybalancesapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\energymodels\\energyvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\energymodels\\energyvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\sourcemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\sourcemetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyvaluesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyvaluesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energyproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energyproductreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\models\\frontmodels\\energycountryreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\models\\frontmodels\\energycountryreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\clients\\iieaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\clients\\iieaapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\clients\\iowidapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\clients\\iowidapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|c:\\users\\igorn\\documents\\projectmanhattan\\is_balancesheet\\energybalancesapi\\energybalancesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6DA8459A-1C19-4B8C-AC9B-0808E690AAB2}|EnergyBalancesApi\\EnergyBalancesApi.csproj|solutionrelative:energybalancesapi\\energybalancesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -170,15 +162,64 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 166,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 40,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "JsonExportService.cs",
+              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\JsonExportService.cs",
+              "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\FrontService\\JsonExportService.cs",
+              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\JsonExportService.cs",
+              "RelativeToolTip": "EnergyBalancesApi\\Services\\FrontService\\JsonExportService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T09:17:55.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "components.json",
+              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\components.json",
+              "RelativeDocumentMoniker": "EnergyBalanceUI\\energy-dashboard\\components.json",
+              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\components.json",
+              "RelativeToolTip": "EnergyBalanceUI\\energy-dashboard\\components.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T09:43:22.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\package.json",
+              "RelativeDocumentMoniker": "EnergyBalanceUI\\energy-dashboard\\package.json",
+              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\energy-dashboard\\package.json",
+              "RelativeToolTip": "EnergyBalanceUI\\energy-dashboard\\package.json",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T09:16:22.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\package-lock.json",
+              "RelativeDocumentMoniker": "EnergyBalanceUI\\package-lock.json",
+              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalanceUI\\package-lock.json",
+              "RelativeToolTip": "EnergyBalanceUI\\package-lock.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T09:16:05.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "RenewableProductReportDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\RenewableProductReportDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\RenewableProductReportDto.cs",
@@ -186,12 +227,11 @@
               "RelativeToolTip": "EnergyBalancesApi\\Models\\FrontModels\\RenewableProductReportDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T06:31:44.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T06:31:44.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "FossilFuelsReportDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\FossilFuelsReportDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\FossilFuelsReportDto.cs",
@@ -203,20 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EnergyFetchController.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Controllers\\EnergyFetchController.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Controllers\\EnergyFetchController.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Controllers\\EnergyFetchController.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Controllers\\EnergyFetchController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T15:32:10.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 27,
               "Title": "EnergyCountryReportDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\EnergyCountryReportDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\EnergyCountryReportDto.cs",
@@ -228,20 +255,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "EnergyProductReportService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\EnergyProductReportService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\FrontService\\EnergyProductReportService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\EnergyProductReportService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\FrontService\\EnergyProductReportService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwCYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T15:56:31.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 3,
               "Title": "EnergyProductReportDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\EnergyProductReportDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\EnergyProductReportDto.cs",
@@ -249,17 +276,18 @@
               "RelativeToolTip": "EnergyBalancesApi\\Models\\FrontModels\\EnergyProductReportDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T15:55:07.153Z"
+              "WhenOpened": "2025-05-12T15:55:07.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "EnergyValueDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\Dto\\EnergyValueDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\Dto\\EnergyValueDto.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\Dto\\EnergyValueDto.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\Dto\\EnergyValueDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T15:14:22.247Z",
               "EditorCaption": ""
@@ -272,14 +300,14 @@
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\FrontService\\EnergyQueryService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\EnergyQueryService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\FrontService\\EnergyQueryService.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwAcAAAARAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T15:07:40.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 14,
               "Title": "EnergyValuesDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\EnergyValuesDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\EnergyValuesDto.cs",
@@ -287,24 +315,25 @@
               "RelativeToolTip": "EnergyBalancesApi\\Models\\FrontModels\\EnergyValuesDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T15:06:06.653Z"
+              "WhenOpened": "2025-05-12T15:06:06.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "EnergyReportService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\EnergyReportService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\FrontService\\EnergyReportService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\FrontService\\EnergyReportService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\FrontService\\EnergyReportService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAkwBgAAAArAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwBgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T14:51:04.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 28,
               "Title": "EnergyReportDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\FrontModels\\EnergyReportDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\FrontModels\\EnergyReportDto.cs",
@@ -316,136 +345,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 15,
               "Title": "EnergyValue.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyValue.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyValue.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyValue.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyValue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:06:35.162Z"
+              "WhenOpened": "2025-05-12T13:06:35.162Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 22,
               "Title": "EnergyFlowType.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyFlowType.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyFlowType.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyFlowType.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyFlowType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T13:05:44.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "EnergyProduct.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyProduct.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyProduct.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\EnergyProduct.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyModels\\EnergyProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T13:03:09.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "Country.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\Country.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyModels\\Country.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyModels\\Country.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyModels\\Country.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T13:01:59.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "EnergyDataService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\EnergyDataService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\EnergyDataService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\EnergyDataService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\EnergyDataService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwFcAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T12:45:16.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "EnergyData.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyData.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyData.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyData.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyData.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T12:42:47.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "IdDescriptions.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Data\\IdDescriptions.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Data\\IdDescriptions.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Data\\IdDescriptions.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Data\\IdDescriptions.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwC4AAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:19:20.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T11:19:20.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EnergyCategory.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyCategory.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyCategory.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyCategory.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:11:11.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EnergyDataEntry.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyDataEntry.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EnergyDataEntry.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EnergyDataEntry.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Models\\EnergyDataEntry.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:10:22.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 2,
               "Title": "EnergyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Data\\EnergyDbContext.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Data\\EnergyDbContext.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Data\\EnergyDbContext.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Data\\EnergyDbContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA7wA8AAAAgAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA8wBsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:38:05.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "DesignTimeDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Data\\DesignTimeDbContextFactory.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Data\\DesignTimeDbContextFactory.cs",
@@ -458,33 +461,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "EnergyController.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Controllers\\EnergyController.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Controllers\\EnergyController.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Controllers\\EnergyController.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Controllers\\EnergyController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwDMAAAAxAAAA",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAQwDIBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:27:17.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "DataTransformer.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\DataTransformer.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\DataTransformer.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\DataTransformer.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\DataTransformer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:26:19.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "IDataTransformer.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\IDataTransformer.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\IDataTransformer.cs",
@@ -497,46 +500,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "EurostatDataService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\EurostatDataService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\EurostatDataService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\EurostatDataService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\EurostatDataService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:24:02.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "EurostatApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EurostatApiResponse.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\EurostatApiResponse.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\EurostatApiResponse.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Models\\EurostatApiResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAIAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAcwCMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:22:49.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 9,
               "Title": "IEurostatDataService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\IEurostatDataService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\IEurostatDataService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\IEurostatDataService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\IEurostatDataService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T10:20:35.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\Dto\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\Dto\\UserLoginDto.cs",
@@ -549,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 16,
               "Title": "UserRegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\Dto\\UserRegisterDto.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\Dto\\UserRegisterDto.cs",
@@ -557,35 +560,12 @@
               "RelativeToolTip": "EnergyBalancesApi\\Models\\Dto\\UserRegisterDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T16:23:47.891Z"
+              "WhenOpened": "2025-05-11T16:23:47.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IIeaApi.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Clients\\IIeaApi.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Clients\\IIeaApi.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Clients\\IIeaApi.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Clients\\IIeaApi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:26:08.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IOwidApi.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Clients\\IOwidApi.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Clients\\IOwidApi.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Clients\\IOwidApi.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Clients\\IOwidApi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:25:39.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 25,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Controllers\\AuthController.cs",
@@ -598,20 +578,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\AuthService.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Services\\AuthService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwCIAAAAAAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAYwCoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T15:10:35.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 34,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Services\\IAuthService.cs",
@@ -619,12 +599,11 @@
               "RelativeToolTip": "EnergyBalancesApi\\Services\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:10:01.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T15:10:01.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\User.cs",
@@ -632,24 +611,11 @@
               "RelativeToolTip": "EnergyBalancesApi\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:06:04.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T15:06:04.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "SourceMetadata.cs",
-              "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\SourceMetadata.cs",
-              "RelativeDocumentMoniker": "EnergyBalancesApi\\Models\\SourceMetadata.cs",
-              "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Models\\SourceMetadata.cs",
-              "RelativeToolTip": "EnergyBalancesApi\\Models\\SourceMetadata.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T14:51:37.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\appsettings.json",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\appsettings.json",
@@ -657,12 +623,11 @@
               "RelativeToolTip": "EnergyBalancesApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-10T14:39:52.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T14:39:52.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "EnergyBalancesApi.csproj",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\EnergyBalancesApi.csproj",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\EnergyBalancesApi.csproj",
@@ -674,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "EnergyBalancesApi.http",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\EnergyBalancesApi.http",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\EnergyBalancesApi.http",
@@ -686,13 +651,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Program.cs",
               "RelativeDocumentMoniker": "EnergyBalancesApi\\Program.cs",
               "ToolTip": "C:\\Users\\igorn\\Documents\\ProjectManhattan\\IS_BalanceSheet\\EnergyBalancesApi\\Program.cs",
               "RelativeToolTip": "EnergyBalancesApi\\Program.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAAwHkAAAAAAAAA",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAAwI0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T13:40:08.459Z",
               "EditorCaption": ""

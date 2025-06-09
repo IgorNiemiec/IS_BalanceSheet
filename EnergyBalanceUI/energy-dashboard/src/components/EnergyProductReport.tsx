@@ -10,8 +10,8 @@ import { Loader } from "./ui/loader";
 
 import "../styles/EnergyProductReportStyle.css";
 
-const countries = ["PL", "DE", "FR", "IT"];
-const years = ["2010", "2015", "2020"];
+const countries = ["PL", "DE", "FR", "IT", "UK", "SE", "ES", "HR"];
+const years = ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 
 type ProductReport = {
   productCode: string;

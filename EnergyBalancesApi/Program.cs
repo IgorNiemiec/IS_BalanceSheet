@@ -10,7 +10,6 @@ using System.Net.Http.Headers;
 using Polly;
 using Polly.Extensions.Http;
 using Refit;
-using EnergyBalancesApi.Infrastructure.Clients;
 using EnergyBalancesApi.Services;
 using Newtonsoft.Json.Linq;
 using EnergyBalancesApi.Models.Dto;
@@ -51,7 +50,6 @@ builder.Services.AddCors(options =>
 // SLOWNIK KRAJOW
 
 
-// Przykład: prosty słownik w Program.cs
 var countryLookup = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
 {
     ["PL"] = 1,
@@ -66,8 +64,9 @@ builder.Services.AddSingleton<IDictionary<string, int>>(countryLookup);
 
 
 
+// DBContext
 
-// rejestracja DbContext
+
 builder.Services.AddDbContext<EnergyDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -75,7 +74,9 @@ builder.Services.AddDbContext<EnergyDbContext>(options =>
     )
 );
 
-// 4.1. Konfiguracja JWT
+
+// JWT
+
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 builder.Services.AddAuthentication(options =>
 {
@@ -109,7 +110,6 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 
-// Rejestracja HttpClientFactory
 builder.Services.AddHttpClient();           
 
 
@@ -135,17 +135,15 @@ builder.Services.AddControllers();
 
 builder.Services.AddHttpClient<IEurostatDataService, EurostatDataService>();
 builder.Services.AddScoped<IDataTransformer, DataTransformer>();
-
-
 builder.Services.AddScoped<EnergyQueryService>();
 builder.Services.AddScoped<EnergyReportService>();
 builder.Services.AddScoped<EnergyProductReportService>();
-
-
-
 builder.Services.AddScoped<EnergyDataService>();
+builder.Services.AddScoped<JsonExportService>();
 
 var application = builder.Build();
+
+// CORS
 
 application.UseCors("AllowFrontend");
 application.UseHttpsRedirection();
@@ -164,18 +162,6 @@ application.UseAuthentication();
 application.UseAuthorization();
 
 
-
-
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
 application.MapControllers();
 application.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

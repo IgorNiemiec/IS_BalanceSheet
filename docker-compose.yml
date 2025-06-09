@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+
+  
+  backend:
+    build:
+      context: ./EnergyBalancesApi
+      dockerfile: Dockerfile
+    ports:
+      - "5244:5244"
+    environment:
+     - ASPNETCORE_ENVIRONMENT=Production
+     - ConnectionStrings__DefaultConnection=Server=host.docker.internal;Port=3306;Database=energydb;Uid=root;Pwd=''
+
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./EnergyBalanceUI/energy-dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+

@@ -1,14 +1,19 @@
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import EnergyChart from "../components/EnergyCharts";
 import ProductReportTable from "../components/EnergyProductReport";
 
 import "../styles/DashboardPage.css"
 import FossilProductsReport from "../components/Reports/FossilProductsReport";
 import FossilProductsChart from "../components/Reports/FossilProductsChart";
+import FossilProductsChartYearByYear from "../components/Reports/FossilProductsChartYearByYear"
+
+import FossilProductsExtraChart from "../components/Reports/FossilProductsExtraChart"
 
 import RenewableProductsReport from "../components/Reports/RenewableProductsReport"
 import RenewableProductsChart from "../components/Reports/RenewableProductsChart"
+import RenewableProductsChartYearByYear from "../components/Reports/RenewableProductsChartYearByYear"
+import RenewableProductsExtraChart from "../components/Reports/RenewableProductsExtraChart"
+import ExportJsonWidget from "../components/Reports/JsonExportWidget"
 
 export default function DashboardPage() {
   const { logout } = useAuth();
@@ -29,8 +34,13 @@ export default function DashboardPage() {
         <ProductReportTable/>
         <FossilProductsReport/>
         <FossilProductsChart/>
+        <FossilProductsChartYearByYear/>
+        <FossilProductsExtraChart/>
         <RenewableProductsReport/>
         <RenewableProductsChart/>
+        <RenewableProductsChartYearByYear/>
+        <RenewableProductsExtraChart/>
+        <ExportJsonWidget/>
       <button className="logout-button" onClick={handleLogout}>
         Wyloguj
       </button>

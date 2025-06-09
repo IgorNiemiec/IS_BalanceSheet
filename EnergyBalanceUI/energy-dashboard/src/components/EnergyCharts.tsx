@@ -27,7 +27,7 @@ type ChartPoint = {
   value: number;
 };
 
-const countries = ["PL", "DE", "FR", "IT"];
+const countries = ["PL", "DE", "FR", "IT", "UK", "SE", "ES", "HR"];
 
 export default function EnergyChart() {
   const [selectedCountry, setSelectedCountry] = useState("PL");

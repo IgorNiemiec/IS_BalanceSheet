@@ -1,0 +1,29 @@
+# =====================
+# Etap 1: budowanie aplikacji
+# =====================
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+
+# Skopiuj plik projektu i przywróć zależności
+COPY *.csproj ./
+RUN dotnet restore
+
+# Skopiuj całą zawartość i zbuduj aplikację
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# =====================
+# Etap 2: uruchamianie aplikacji
+# =====================
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+
+COPY --from=build /app/out ./
+
+EXPOSE 5244
+
+# Ustaw zmienne środowiskowe (opcjonalnie)
+ENV ASPNETCORE_URLS=http://+:5244
+ENV ASPNETCORE_ENVIRONMENT=Production
+
+ENTRYPOINT ["dotnet", "EnergyBalancesApi.dll"]

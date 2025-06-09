@@ -6,9 +6,8 @@ namespace EnergyBalancesApi.Data
 {
     public class EnergyDbContext : DbContext
     {
-        public DbSet<SourceMetadata> SourceMetadata { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<EnergyData> EnergyData { get; set; }  // Nowa tabela
+        public DbSet<EnergyData> EnergyData { get; set; }  
 
         public DbSet<Country> Countries { get; set; }
         public DbSet<EnergyProduct> Products { get; set; }

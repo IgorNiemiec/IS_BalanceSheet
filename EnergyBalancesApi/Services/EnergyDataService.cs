@@ -15,21 +15,6 @@ namespace EnergyBalancesApi.Services
             _context = context;
         }
 
-        public async Task SaveDataAsync(List<EnergyValueDto> data)
-        {
-            var entities = data.Select(dto => new EnergyData
-            {
-                Code = dto.Code,
-                Amount = dto.Amount,
-                Description = dto.Description,
-                Country = dto.Country
-            }).ToList();
-
-            _context.EnergyData.AddRange(entities);
-
-            await _context.SaveChangesAsync();
-            Console.WriteLine("Dane zapisane do bazy danych.");
-        }
 
 
         public async Task SaveDataAsync(List<EnergyValueDto> data, string flowCode, string unit, int year)
@@ -73,7 +58,7 @@ namespace EnergyBalancesApi.Services
                 _context.EnergyValues.Add(energyValue);
             }
 
-            using var transaction = await _context.Database.BeginTransactionAsync();
+            using var transaction = await _context.Database.BeginTransactionAsync(System.Data.IsolationLevel.ReadCommitted);
 
             try
             {

@@ -36,8 +36,8 @@ export function LoginForm() {
       }
 
       const json = await response.json();
-      login(json.token); // Zapisujemy token
-      navigate("/dashboard"); // Przekierowanie po zalogowaniu
+      login(json.token); 
+      navigate("/dashboard");
     } catch (err: any) {
       setError(err.message || "Wystąpił błąd.");
     }

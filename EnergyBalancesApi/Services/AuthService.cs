@@ -30,7 +30,7 @@ public class AuthService : IAuthService
         };
         _db.Users.Add(user);
 
-        using var transaction = await _db.Database.BeginTransactionAsync();
+        using var transaction = await _db.Database.BeginTransactionAsync(System.Data.IsolationLevel.ReadCommitted);
        
 
         try

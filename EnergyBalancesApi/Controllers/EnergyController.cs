@@ -3,8 +3,11 @@ using EnergyBalancesApi.Models.EnergyModels;
 using EnergyBalancesApi.Services;
 using EnergyBalancesApi.Services.FrontService;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -12,11 +15,15 @@ public class EnergyController : ControllerBase
 {
     private readonly IEurostatDataService _dataService;
     private readonly IDataTransformer _transformer;
+    private readonly JsonExportService _jsonExportService;
 
-    public EnergyController(IEurostatDataService dataService, IDataTransformer transformer)
+
+    public EnergyController(IEurostatDataService dataService, IDataTransformer transformer, JsonExportService jsonExportService)
     {
         _dataService = dataService;
         _transformer = transformer;
+        _jsonExportService = jsonExportService;
+
     }
 
     private async Task<IActionResult> GetDataForCountries(string nrg_bal, string year)
@@ -44,10 +51,10 @@ public class EnergyController : ControllerBase
     [HttpGet("primary-production")]
     public async Task<IActionResult> GetPrimaryProduction([FromServices] EnergyDataService dataService)
     {
-        var countries = new[] { "PL", "DE", "FR", "IT" };
+        var countries = new[] { "PL", "DE", "FR", "IT", "UK", "SE", "ES", "HR"};
         const string nrg_bal = "PPRD";  
         const string unit = "KTOE";
-        var time = new[] { 2010, 2015,2020 };
+        var time = new[] { 2010, 2011, 2012, 2013, 2014, 2015,2016, 2017,2018, 2019, 2020, 2021,2022 };
 
         var results = new List<EnergyValueDto>();
 
@@ -265,17 +272,36 @@ public class EnergyController : ControllerBase
      }
 
 
-   // GET /api/energy/report/by-country
-   //
-   // GET /api/energy/report/by-country? product = G3000
-   //
-   // GET /api/energy/report/by-country? product = G3000 & year = 2010
-   //
-   // GET /api/energy/report/by-country? product = RA000 & year = 2010 & flow = PPRD
+    // GET /api/energy/report/by-country
+    //
+    // GET /api/energy/report/by-country? product = G3000
+    //
+    // GET /api/energy/report/by-country? product = G3000 & year = 2010
+    //
+    // GET /api/energy/report/by-country? product = RA000 & year = 2010 & flow = PPRD
 
 
-   
+  [HttpGet("export-to-json")]
+    public async Task<IActionResult> ExportEnergyDataToJson(
+        [FromQuery] string? countryCode,
+        [FromQuery] int? year,
+        [FromQuery] string? flowCode,
+        [FromQuery] string? productCode)
+    {
+        var jsonData = await _jsonExportService.ExportEnergyDataToJsonStringAsync(
+            countryCode, year, flowCode, productCode);
 
+        if (jsonData == null)
+        {
+            return NotFound("Brak danych do wyeksportowania dla podanych kryteriów.");
+        }
 
+        var fileName = "energy_data.json";
+        if (!string.IsNullOrEmpty(countryCode)) fileName = $"{countryCode}_energy_data.json";
+        if (year.HasValue) fileName = $"{year.Value}_{fileName}";
 
+        return File(System.Text.Encoding.UTF8.GetBytes(jsonData), "application/json", fileName);
     }
+
+
+}
